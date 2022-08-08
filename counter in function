@@ -1,0 +1,13 @@
+def Dictcount(str1,str2):
+    str3=str1.lower()
+    setstring=str3.split(' ')
+    s=[]
+    for i in setstring:
+        if i.startswith(str2):
+            s.append(i)
+        from collections import Counter
+        dict=Counter(s)
+        print(dict)
+str="Betty Bought a Butter the butter was bitter so betty bought a better butter which was not bitter "
+word=input("enter the starting letter :")
+Dictcount(str,word)
